@@ -1,9 +1,8 @@
 #include "../include/blib.hpp"
 
-template<std::unsigned_integral T>
-uint32_t blib::get_bits(T n)
+int blib::get_bits(uint64_t n)
 {
-    uint32_t i = 0;
+    int i = 0;
     while (n)
     {
         n = n >> 1;
